@@ -31,6 +31,7 @@ async function connect() {
     dbRef,
     (snapshot) => {
       if (snapshot.exists()) {
+        console.log("ss");
         console.log(snapshot.val());
       } else {
         console.log("doesn't exist");
